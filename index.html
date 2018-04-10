@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="js/easyzoom.js" type="text/javascript"></script>
+
+    <script src="js/rater.js" type="text/javascript"></script>
+
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Nice Shoes | Ecommerce Product Details Page</title>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-lignt">
+                        <a class="navbar-brand" href="#">Nice Shoes</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="top-icons">
+                            <img src="images/shopping-bag.png" width="20px" id="shopping-icon-mobile">
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">New
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Shoes</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Bags</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Accesories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sale</a>
+                                </li>
+                            </ul>
+                            <div id="top-icons-desktop">
+                                <img src="images/search.png" width="20px" style="margin-right:23px;" id="search-icon-desktop">
+                                <img src="images/avatar.png" width="20px" style="margin-right:23px;" id="avatar-icon-desktop">
+                                <img src="images/shopping-bag.png" width="20px" id="shopping-icon-desktop">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="main-container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Shoes</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Flats</a>
+                    </li>
+                    <li class="breadcrumb-item active">Leather Ballerinas</li>
+                </ol>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-7">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <ol class="carousel-indicators">
+                    </ol>
+                </div>
+            </div>
+            <div class="col-sm-5" id="details">
+                <h2>Leather Ballerinas</h2>
+                <h4 class="price">$49.00</h4>
+                <div id="reviews-top">
+                    <img src="images/4-stars.png">
+                    <span class="reviews-link">|
+                        <a href="#reviews-sep">3 Reviews</a>
+                    </span>
+                </div>
+
+
+                <h5 class="mt-4">
+                    <span class="label">Color:</span>
+                    <span id="colorOutput"></span>
+                </h5>
+                <div id="colors">
+                </div>
+
+                <h5 class="mt-4">
+                    <span class="label">Size:</span>
+                </h5>
+
+                <div class="row">
+                    <ul class="size-selection">
+                        <li data-action="size-selection">
+                            <label data-variant-value="5">
+                                <input class="variant-item__input" type="radio" name="shoe-size" value="5">
+                                <span class="variant-item__text">5</span>
+                            </label>
+                        </li>
+
+                        <li data-action="size-selection">
+                            <label data-variant-type="shoe-size" data-variant-value="6">
+                                <input class="variant-item__input" type="radio" name="shoe-size" value="6">
+                                <span class="variant-item__text">6</span>
+                            </label>
+                        </li>
+
+                        <li data-action="size-selection">
+                            <label data-variant-type="shoe-size" data-variant-value="7">
+                                <input class="variant-item__input" type="radio" name="shoe-size" value="7">
+                                <span class="variant-item__text">7</span>
+                            </label>
+                        </li>
+
+                        <li data-action="size-selection">
+                            <label data-variant-type="shoe-size" data-variant-value="8">
+                                <input class="variant-item__input" type="radio" name="shoe-size" value="8">
+                                <span class="variant-item__text">8</span>
+                            </label>
+                        </li>
+
+                        <li data-action="size-selection">
+                            <label data-variant-type="shoe-size" data-variant-value="9">
+                                <input class="variant-item__input" type="radio" name="shoe-size" value="9">
+                                <span class="variant-item__text">9</span>
+                            </label>
+                        </li>
+
+                        <li data-action="size-selection">
+                            <label data-variant-type="shoe-size" data-variant-value="10">
+                                <input class="variant-item__input" type="radio" name="shoe-size" value="10">
+                                <span class="variant-item__text">10</span>
+                            </label>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+                <h5 class="mt-4">
+                    <span class="label">Qty:</span>
+                </h5>
+
+                <div class="row">
+                    <div class="col-3">
+                        <select class="custom-select mt-0">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="col-9">
+                        <div id="shipping">Free shipping on purchases over $80</div>
+
+                    </div>
+                </div>
+                <hr>
+                <div id="item-details" class="" style="">
+                    <h5 class="label">Item Details</h5>
+                    <p>Woven satin fabric upper, faux leather trim, pointed toe, bow detail at front Trimmed collar. Item #:
+                        5001-1534
+                    </p>
+                </div>
+
+                <button type="button" class="btn mt-0" id="add-to-cart" disabled>Select a color</button>
+
+            </div>
+        </div>
+
+        <hr class="sep">
+
+        <div id="related-products">
+
+            <h2 class="mt-5 mb-5 text-center">You may also like</h2>
+
+            <div class="row">
+                <div class="col-sm related-item">
+                    <img src="images/light-blue.jpg" class="img-fluid mb-3">
+                    <h5>Mules with fringed detail</h5>
+                    <span class="price-related">$29.90</span>
+                    <span class="free-shipping">Free shipping over $40</span>
+                </div>
+                <div class="col-sm related-item">
+                    <img src="images/white-single.jpg" class="img-fluid mb-3">
+                    <h5>Asymetric Flat shoes</h5>
+                    <span class="price-related">$29.90</span>
+                    <span class="free-shipping">Free shipping over $40</span>
+                </div>
+                <div class="col-sm related-item">
+                    <img src="images/braided-raffia.jpg" class="img-fluid mb-3">
+                    <h5>Braided raffia flat shoes</h5>
+                    <span class="price-related">$40.00</span>
+                    <span class="free-shipping">Free shipping over $40</span>
+                </div>
+                <div class="col-sm related-item">
+                    <img src="images/tricolor.jpg" class="img-fluid mb-3">
+                    <h5>Tricolor Ballerina Flats</h5>
+                    <span class="price-related">$35.50</span>
+                    <span class="free-shipping">Free shipping over $40</span>
+                </div>
+                <div class="col-sm related-item" style="display:none">
+                    <img src="images/fucsia.jpg" class="img-fluid mb-3">
+                    <h5>ballerinas ruffle detail</h5>
+                    <span class="price-related">$29.90</span>
+                    <span class="free-shipping">Free shipping over $40</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="sep">
+
+        <div id="bundles">
+            <h2 class="mt-5 mb-5 text-center">Frequently bought together</h2>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="images/tan03.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-1 plus">+</div>
+                <div class="col-sm-2">
+                    <img src="images/short.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-1 plus">+</div>
+                <div class="col-sm-2">
+                    <img src="images/bag.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-4 bundle-shop">
+                    <h4 class="bundle-price">Total Price:
+                        <span class="price">$150.00</span>
+                    </h4>
+                    <button class="btn btn-cart btn-bundle" id="add-to-cart-bundle">Add all to cart</button>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="mt-5" id="reviews-sep">
+
+        <div id="reviews">
+            <h2 class="mt-5 mb-5 text-center">Customer Reviews</h2>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <strong>rachel7</strong>
+                    <span class="location">Location: Australia</span>
+                    <span class="age">Age: 27</span>
+                </div>
+
+                <div class="col-sm-8">
+                    <img src="images/4-stars.png" class="stars">
+                    <h6>I love them!</h6>
+                    <p>The product is pretty good, very comfortable and highly recommended.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.Cum
+                        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <span class="review-date">04/09/2018</span>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <strong>tania567</strong>
+                    <span class="location">Location: UK</span>
+                    <span class="age">Age: 27</span>
+                </div>
+
+                <div class="col-sm-8">
+                    <img src="images/4-stars.png" class="stars">
+                    <h6>Pretty Good!</h6>
+                    <p>The product is pretty good, very comfortable and highly recommended.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                        felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <span class="review-date">04/09/2018</span>
+                </div>
+            </div>
+            <hr>
+
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <strong>nancy234</strong>
+                    <span class="location">Location: USA</span>
+                    <span class="age">Age: 27</span>
+                </div>
+
+                <div class="col-sm-8">
+                    <img src="images/4-stars.png" class="stars">
+                    <h6>Cute shoes</h6>
+                    <p>The product is pretty good, very comfortable and highly recommended.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+                        felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <span class="review-date">04/09/2018</span>
+                </div>
+            </div>
+            <hr>
+
+            <div id="review-form">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6">
+                        <div class="rate"></div>
+                        <form>
+                            <div class="form-group">
+                                <label for="formGroupExampleInput">Title</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleTextarea">Your review</label>
+                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                            </div>
+                            <div style="text-align:right;">
+                                <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="text-center">
+                <button type="button" id="write-review" class="btn">Write a review</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>© 2018</footer>
+
+</body>
+
+</html>
