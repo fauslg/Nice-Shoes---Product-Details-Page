@@ -387,6 +387,11 @@ input[type="text"], textarea,button {
     padding: 10px 41px;
 }
 
+#submit:hover {
+    background-color: #8bacbd;
+    color: white;
+}
+
 #review-form {
     display:none;
     margin-bottom:30px;

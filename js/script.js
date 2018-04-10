@@ -1,5 +1,54 @@
 $(document).ready(function () {
 
+    // Hardcoded products object   
+
+    var products = [{
+        color: 'Nude',
+        colorUrl: 'images/tan-color.jpg',
+        images: {
+            image01: 'images/tan01.jpg',
+            image02: 'images/tan02.jpg',
+            image03: 'images/tan03.jpg',
+            image04: 'images/tan04.jpg',
+            image05: 'images/tan05.jpg'
+        }
+    },
+    {
+        color: 'Black',
+        colorUrl: 'images/black-color.jpg',
+        images: {
+            image01: 'images/black01.jpg',
+            image02: 'images/black02.jpg',
+            image03: 'images/black03.jpg',
+            image04: 'images/black04.jpg',
+            image05: 'images/black05.jpg'
+        }
+    },
+    {
+        color: 'Red',
+        colorUrl: 'images/red-color.jpg',
+        images: {
+            image01: 'images/red01.jpg',
+            image02: 'images/red02.jpg',
+            image03: 'images/red03.jpg',
+            image04: 'images/red04.jpg',
+            image05: 'images/red05.jpg'
+        }
+    },
+    {
+        color: 'Snake',
+        colorUrl: 'images/snake-color.jpg',
+        images: {
+            image01: 'images/snake01.jpg',
+            image02: 'images/snake02.jpg',
+            image03: 'images/snake03.jpg',
+            image04: 'images/snake04.jpg',
+            image05: 'images/snake05.jpg'
+        }
+    }
+]
+    
+
     var colorsHtml = "";
 
     // Smooth scrolling
@@ -18,55 +67,7 @@ $(document).ready(function () {
         window.location.hash = hash;
       });
     } 
-  });
-
-  // Hardcoded products object   
-
-    var products = [{
-            color: 'Nude',
-            colorUrl: 'images/tan-color.jpg',
-            images: {
-                image01: 'images/tan01.jpg',
-                image02: 'images/tan02.jpg',
-                image03: 'images/tan03.jpg',
-                image04: 'images/tan04.jpg',
-                image05: 'images/tan05.jpg'
-            }
-        },
-        {
-            color: 'Black',
-            colorUrl: 'images/black-color.jpg',
-            images: {
-                image01: 'images/black01.jpg',
-                image02: 'images/black02.jpg',
-                image03: 'images/black03.jpg',
-                image04: 'images/black04.jpg',
-                image05: 'images/black05.jpg'
-            }
-        },
-        {
-            color: 'Red',
-            colorUrl: 'images/red-color.jpg',
-            images: {
-                image01: 'images/red01.jpg',
-                image02: 'images/red02.jpg',
-                image03: 'images/red03.jpg',
-                image04: 'images/red04.jpg',
-                image05: 'images/red05.jpg'
-            }
-        },
-        {
-            color: 'Snake',
-            colorUrl: 'images/snake-color.jpg',
-            images: {
-                image01: 'images/snake01.jpg',
-                image02: 'images/snake02.jpg',
-                image03: 'images/snake03.jpg',
-                image04: 'images/snake04.jpg',
-                image05: 'images/snake05.jpg'
-            }
-        }
-    ]
+  });  
 
     // Carusel slides initial dynamic loading
 
